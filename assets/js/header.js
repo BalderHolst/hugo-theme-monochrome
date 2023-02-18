@@ -41,15 +41,15 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     dark_mode_btn.addEventListener('click', function () {
-        document.documentElement.setAttribute("data-theme", "dark");
-        localStorage.theme = 'dark';
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.theme = 'light';
         dark_mode_btn.classList.add('hidden');
         light_mode_btn.classList.remove('hidden');
     });
 
     light_mode_btn.addEventListener('click', function () {
-        document.documentElement.setAttribute("data-theme", "light");
-        localStorage.theme = 'light';
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.theme = 'dark';
         light_mode_btn.classList.add('hidden');
         dark_mode_btn.classList.remove('hidden');
     });

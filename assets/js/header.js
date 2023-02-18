@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function () {
     if (localStorage.theme === 'dark' || !('theme' in localStorage)) {
         console.log("dark");
         dark_mode_btn.classList.remove('hidden');
-        document.documentElement.setAttribute("data-theme", "light");
+        document.documentElement.setAttribute("data-theme", "dark");
     } else {
         console.log("light");
         light_mode_btn.classList.remove('hidden');

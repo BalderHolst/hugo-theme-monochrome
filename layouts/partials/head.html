@@ -39,7 +39,7 @@
 
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
     <script>
-        if (localStorage.theme === 'light' || (!('theme' in localStorage) && !window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        if (localStorage.theme === 'light' || !('theme' in localStorage) {
             document.documentElement.setAttribute("data-theme", "light");
         } else {
             document.documentElement.setAttribute("data-theme", "dark");

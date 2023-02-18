@@ -35,9 +35,9 @@ window.addEventListener("DOMContentLoaded", function () {
     const light_mode_btn = document.getElementById("light_mode_btn");
 
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        light_mode_btn.classList.remove('hidden');
-    } else {
         dark_mode_btn.classList.remove('hidden');
+    } else {
+        light_mode_btn.classList.remove('hidden');
     }
 
     dark_mode_btn.addEventListener('click', function () {

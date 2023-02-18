@@ -1,3 +1,28 @@
+body {
+  font:1.2em/1.62 sans-serif
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  z-index: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 article {
   line-height: 1.7;
 

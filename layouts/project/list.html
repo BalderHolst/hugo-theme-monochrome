@@ -1,0 +1,37 @@
+{{ define "content" }}
+
+<h1>{{ .Page.Title }}
+    <div class="icon-group">
+        {{ with .Page.Params.github }}
+        <div class="icon">
+            <a rel="noopener" target="_blank" href="{{ . }}" aria-label="github">
+                {{ partial "svg/github.html" }}
+            </a>
+        </div>
+        {{ end }}
+        {{ with .Page.Params.docs }}
+        <div class="icon">
+            <a rel="noopener" target="_blank" href="{{ . }}" aria-label="docs">
+                {{ partial "svg/book.html" }}
+            </a>
+        </div>
+        {{ end }}
+        {{ with .Page.Params.package }}
+        <div class="icon">
+            <a rel="noopener" target="_blank" href="{{ . }}" aria-label="package">
+                {{ partial "svg/package.html" }}
+            </a>
+        </div>
+        {{ end }}
+    </div>
+</h1>
+
+{{ if and .Content (eq .Paginator.PageNumber 1) }}
+    <div class="content-margin">
+        {{- partial "content.html" . -}}
+    </div>
+{{ end }}
+
+{{ partial "postcard/layout.html" (dict "pages" .RegularPages "ctx" .) }}
+
+{{ end }}

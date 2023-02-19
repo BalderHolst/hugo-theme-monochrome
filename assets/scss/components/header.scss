@@ -8,8 +8,8 @@ header {
     display: flex;
     align-items: center;
 
-    a {
-      @include text-header;
+    .site-title {
+      @include text-site-title;
       @include font-bold;
       color: var(--color-text);
     }
@@ -64,4 +64,12 @@ header {
       }
     }
   }
+}
+
+.page-title {
+    @include text-page-title;
+    
+    a {
+        color: var(--color-text);
+    }
 }

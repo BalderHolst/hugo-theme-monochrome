@@ -31,6 +31,16 @@
   line-height: 2.5rem; /* 32px */
 }
 
+@mixin text-site-title {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.5rem; /* 32px */
+}
+
+@mixin text-page-title {
+  font-size: 2.5rem; /* 24px */
+  line-height: 2.5rem; /* 32px */
+}
+
 @mixin font-thin {
   font-weight: 100;
 }

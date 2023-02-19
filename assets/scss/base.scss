@@ -31,6 +31,8 @@ h1 {
 
 h2 {
   @include text-2xl;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-text-secondary);
 }
 
 h3 {

@@ -1,0 +1,25 @@
+<h1>{{ .Page.Title }}
+    <div class="icon-group">
+        {{ with .Get "github" }}
+        <div class="icon">
+            <a rel="noopener" target="_blank" href="{{ . }}" aria-label="github">
+                {{ partial "svg/github.html" }}
+            </a>
+        </div>
+        {{ end }}
+        {{ with .Get "docs" }}
+        <div class="icon">
+            <a rel="noopener" target="_blank" href="{{ . }}" aria-label="docs">
+                {{ partial "svg/book.html" }}
+            </a>
+        </div>
+        {{ end }}
+        {{ with .Get "package" }}
+        <div class="icon">
+            <a rel="noopener" target="_blank" href="{{ . }}" aria-label="package">
+                {{ partial "svg/package.html" }}
+            </a>
+        </div>
+        {{ end }}
+    </div>
+</h1>

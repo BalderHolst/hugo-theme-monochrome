@@ -10,12 +10,13 @@
 {{if .Params.backlinks}}
 {{ $this := . }} 
 {{ $root := .Parent.Path }} 
+{{ $site := .Site }}
 <hr>
 <h3>Backlinks</h3>
 <ul>
 {{range .Params.backlinks}}
 {{ $page := (path.Join "/" $root . )}}
-<li><a href="/{{ $root }}{{ . }}"> {{$page}} </a> </li>
+<li><a href="{{ $page }}"> {{ with $site.GetPage $page }} {{.Title}} {{ end }}</a> </li>
 {{end}}
 </ul>
 {{end}}

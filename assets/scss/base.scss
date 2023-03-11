@@ -35,6 +35,12 @@ h2 {
   border-bottom: 1px solid var(--color-text-secondary);
 }
 
+.note h2 {
+  @include text-2xl;
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+
 h3 {
   @include text-xl;
 }

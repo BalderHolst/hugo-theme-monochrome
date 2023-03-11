@@ -39,7 +39,11 @@
 
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
     <script>
+<<<<<<< Updated upstream
         if (localStorage.theme === 'light' || !('theme' in localStorage) && !window.matchMedia('(prefers-color-scheme: dark)').matches {
+=======
+        if (localStorage.theme === 'light' || !('theme' in localStorage)) {
+>>>>>>> Stashed changes
             document.documentElement.setAttribute("data-theme", "light");
         } else {
             document.documentElement.setAttribute("data-theme", "dark");

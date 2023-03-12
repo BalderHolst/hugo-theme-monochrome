@@ -1,5 +1,17 @@
 {{- define "content" -}}
 
+
+<div class="hidden">
+{{ if .Site.Params.notes_preamble}}
+    {{ $preamble:= .Site.Params.notes_preamble }}
+    {{ if fileExists $preamble }}
+    $$ {{ readFile $preamble }} $$
+    {{ else }}
+    <h1 style="background: yellow; color: red;"> Could not find preamble: {{ $preamble }}</h1>
+    {{ end }}
+{{ end }}
+</div>
+
 <div class="note">
 
 {{ if .Content }}

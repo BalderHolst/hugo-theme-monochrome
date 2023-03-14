@@ -35,6 +35,7 @@ html[data-theme="light"] {
   --color-navbar-item-inactive: #{$gray-400};
   --color-navbar-item-active: #{$gray-900};
   --color-navbar-item-in-section: #{$gray-600};
+  --color-accent: #AACCAA;
 }
 
 html[data-theme="dark"] {
@@ -53,6 +54,7 @@ html[data-theme="dark"] {
   --color-navbar-item-inactive: #{$gray-400};
   --color-navbar-item-active: #{$gray-100};
   --color-navbar-item-in-section: #{$gray-250};
+  --color-accent: #447755;
 }
 
 // Default color settings

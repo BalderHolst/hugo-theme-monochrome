@@ -12,6 +12,14 @@
 {{ end }}
 </div>
 
+{{ if .Params.tags }}
+<ul class="note-tags">
+{{ range .Params.tags }}
+<li class="note-tag">#{{ . }}</li>
+{{ end }}
+</ul>
+{{ end }}
+
 <div class="note">
 
 {{ if .Content }}

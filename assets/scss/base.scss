@@ -120,3 +120,18 @@ details[open] > summary {
     width: $xxl_main_width;
   }
 }
+
+.note-tags {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0px 0px;
+}
+
+.note-tags li {
+    display: inline-block;
+    background: var(--color-accent);
+    border-radius: 15px;
+    padding: 0.5px 10px;
+    margin: 3px 0;
+    font-size: 11pt;
+}

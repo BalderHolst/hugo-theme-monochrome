@@ -135,3 +135,30 @@ details[open] > summary {
     margin: 3px 0;
     font-size: 11pt;
 }
+
+
+.cbox {
+    color: var(--color-text);
+    padding: 8px 0;
+    width: 100%;
+    text-indent: 15px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16pt;
+    // border-radius: 5px;
+}
+
+.cbox-button {
+    cursor: pointer;
+}
+
+.cbox-button:hover {
+    background-color: #555;
+}
+
+.cbox-content {
+    color: var(--color-text);
+    padding: 0 18px;
+    overflow: hidden;
+}

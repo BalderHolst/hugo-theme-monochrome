@@ -1,0 +1,8 @@
+{{ $foldable := .Get "foldable"}}
+{{ $type := default "default" (.Get "type") }}
+
+
+<div style="background: var(--cbox-{{ $type }});"; class="cbox {{ if $foldable }}cbox-button{{ end }} cbox-type-{{ .Get "type" }}">{{ .Get "title" | .Page.RenderString }}</div>
+<div {{ if (ne $type "") }}style="background: var(--cbox-{{ $type }}-content);"{{ end }} class="cbox-content {{ if $foldable }}hidden{{ end }}">
+    {{ .Inner | .Page.RenderString }}
+</div>

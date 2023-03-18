@@ -3,7 +3,7 @@
 
 
 <div class="cbox cbox-type-{{ .Get "type" }}">
-    <div {{ if $foldable }}class="cbox-button"{{ end }}><h4>{{ .Get "title" |
+    <div class="{{ if $foldable }}cbox-button{{ end }}"><h4 class="cbox-title">{{ .Get "title" |
         .Page.RenderString }}</h4></div>
     <div {{ if (ne $type "" ) }} {{ end }}
         class="cbox-content {{ if $foldable }}hidden{{ end }}">

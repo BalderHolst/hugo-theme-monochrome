@@ -37,8 +37,7 @@
     <h3>Backlinks</h3>
     <ul>
         {{range .Params.backlinks}}
-        {{ $page := (path.Join "/" $root . )}}
-        <li><a href="{{ $page }}"> {{ with $site.GetPage $page }} {{.Title}} {{ end }}</a> </li>
+        <li><a href="{{ . }}">{{ with $site.GetPage . }} {{.Title}} {{ end }}</a> </li>
         {{end}}
     </ul>
     {{end}}

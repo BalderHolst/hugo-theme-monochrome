@@ -1,7 +1,15 @@
 {{- define "content" -}}
 
+{{ $show_date := true}}
+{{ $tag := false}}
+
+{{ if (eq (path.Dir .Path) "note-tags") }}
+    {{ $show_date = false }}
+    {{ $tag = true }}
+{{ end }}
+
 <div>
-    <h1>{{ .Title }}</h1>
+    <h1>{{ if $tag}}#{{ end }}{{ .Title }}</h1>
     {{ with .Pages.ByPublishDate }}
         <ul class="list-layout">
             {{ range . }}
@@ -9,9 +17,11 @@
                     <a href="{{ .RelPermalink }}">
                         {{- .Title -}}
                     </a>
+                    {{ if $show_date }}
                     <span>
                         {{- .PublishDate.Format "2006/01/02" -}}
                     </span>
+                    {{ end}}
                 </li>
             {{ end }}
         </ul>

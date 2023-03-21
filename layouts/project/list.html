@@ -23,6 +23,13 @@
             </a>
         </div>
         {{ end }}
+        {{ with .Page.Params.website }}
+        <div class="icon">
+            <a rel="noopener" target="_blank" href="{{ . }}" aria-label="package">
+                {{ partial "svg/earth.html" }}
+            </a>
+        </div>
+        {{ end }}
     </div>
 </h1>
 

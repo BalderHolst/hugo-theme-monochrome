@@ -11,6 +11,7 @@ html, button, input, select, textarea,
 
 code, kbd, pre {
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
+  @include text-sm
 }
 
 main {

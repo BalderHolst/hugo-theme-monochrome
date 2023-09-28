@@ -2,11 +2,11 @@
 {{ $type := default "default" (.Get "type") }}
 
 
-<div class="cbox cbox-type-{{ .Get "type" }}">
-    <div class="{{ if $foldable }}cbox-button{{ end }}"><h4 class="cbox-title">{{ .Get "title" |
+<div class="callout callout-type-{{ .Get "type" }}">
+    <div class="{{ if $foldable }}callout-button{{ end }}"><h4 class="callout-title">{{ .Get "title" |
         .Page.RenderString }}</h4></div>
     <div {{ if (ne $type "" ) }} {{ end }}
-        class="cbox-content {{ if $foldable }}hidden{{ end }}">
+        class="callout-content {{ if $foldable }}hidden{{ end }}">
         {{ .Inner | .Page.RenderString }}
     </div>
 </div>

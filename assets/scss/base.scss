@@ -138,34 +138,34 @@ details[open] > summary {
 }
 
 
-.cbox-type-example {
-    background: var(--cbox-example);
-    color: var(--cbox-title-example);
+.callout-type-example {
+    background: var(--callout-example);
+    color: var(--callout-title-example);
 }
 
-.cbox-type-tip {
-    background: var(--cbox-tip);
-    color: var(--cbox-title-tip);
+.callout-type-tip {
+    background: var(--callout-tip);
+    color: var(--callout-title-tip);
 }
 
-.cbox-type-note {
-    background: var(--cbox-note);
-    color: var(--cbox-title-note);
+.callout-type-note {
+    background: var(--callout-note);
+    color: var(--callout-title-note);
 }
 
-.cbox-type-video {
-    background: var(--cbox-video);
-    color: var(--cbox-title-video);
+.callout-type-video {
+    background: var(--callout-video);
+    color: var(--callout-title-video);
 }
 
-.cbox {
+.callout {
     width: 100%;
     padding: 8px 0;
     margin: 10px 0;
     border-radius: 8px;
 }
 
-.cbox .cbox-title {
+.callout .callout-title {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -176,15 +176,15 @@ details[open] > summary {
     // border-radius: 5px;
 }
 
-.cbox-button {
+.callout-button {
     cursor: pointer;
 }
 
-.cbox-button:hover {
+.callout-button:hover {
     background-color: #555;
 }
 
-.cbox-content {
+.callout-content {
     color: var(--color-text);
     padding: 0 18px;
     overflow: hidden;

@@ -12,9 +12,9 @@
     {{ end }}
 </div>
 
-{{ if .Params.tags }}
+{{ if .Params.note_tags }}
 <ul class="note-tags">
-    {{ range .Params.tags }}
+    {{ range .Params.note_tags }}
     <li class="note-tag">#{{ . }}</li>
     {{ end }}
 </ul>

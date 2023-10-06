@@ -130,11 +130,15 @@ details[open] > summary {
 
 .note-tags li {
     display: inline-block;
+}
+
+.note-tags a {
     background: var(--color-accent);
     border-radius: 15px;
-    padding: 0.5px 10px;
+    padding: 4px 10px;
     margin: 3px 0;
     font-size: 11pt;
+    color: var(--color-text);
 }
 
 

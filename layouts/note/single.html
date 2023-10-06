@@ -15,7 +15,7 @@
 {{ if .Params.note_tags }}
 <ul class="note-tags">
     {{ range .Params.note_tags }}
-    <li class="note-tag">#{{ . }}</li>
+    <li class="note-tag"><a href="/note_tags/{{ . }}">#{{ . }}</a></li>
     {{ end }}
 </ul>
 {{ end }}

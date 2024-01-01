@@ -1,3 +1,26 @@
+h1 {
+  @include text-3xl;
+  margin-top: 3.5rem;
+  padding-bottom: 11px;
+  border-bottom: 3px solid var(--color-text-secondary);
+  text-align: left;
+}
+
+h1.project_title {
+  @include text-2xl;
+  margin: 0rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color-text-secondary);
+  text-align: left;
+}
+
+h2 {
+  margin-top: 3.0rem;
+  @include text-2xl;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--color-text-secondary);
+}
+
 ::-webkit-scrollbar {
   width: 7px;
   height: 8px;

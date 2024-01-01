@@ -1,15 +1,18 @@
+* {
+    transition: background-color 150ms ease-out;
+}
+
 body {
   font:1.2em/1.62 sans-serif;
   @include text-base;
 }
-
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
   font-family: system-ui,-apple-system,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji;
 }
 
-code, kbd, pre {
+code, kbd, pre, .code {
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
   @include text-sm
 }
@@ -18,28 +21,27 @@ main {
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem;
+  text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @include font-bold;
+  font:1.2em/1.62 serif;
+  font-weight: 500;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
-h1 {
-  @include text-3xl;
-}
-
-h2 {
-  @include text-2xl;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--color-text-secondary);
+.note h1 {
+  padding-bottom: 0px;
+  border-bottom: none;
+  text-align: left;
 }
 
 .note h2 {
-  @include text-2xl;
-  padding-bottom: 0px;
-  border-bottom: none;
+  padding-top: 0px;
+  border-top: none;
+  text-align: left;
 }
 
 h3 {
@@ -58,8 +60,8 @@ h6 {
   @include text-sm;
 }
 
-figure {
-  margin: 0;
+.figure {
+  margin: 100;
 }
 
 img {
@@ -120,6 +122,12 @@ details[open] > summary {
   main {
     width: $xxl_main_width;
   }
+}
+
+.caption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-style: italic;
 }
 
 .note-tags {

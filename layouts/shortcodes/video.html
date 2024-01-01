@@ -1,0 +1,25 @@
+{{ $cap := .Get "caption" }}
+{{ $autoplay := .Get "autoplay" }}
+{{ $muted := .Get "muted" }}
+{{ $loop := .Get "loop" }}
+
+{{ if $autoplay }}
+{{ $muted = true }}
+{{ $loop = true }}
+{{ end }}
+
+<div class="figure">
+    <video
+        width=100%
+        controls
+        {{ if $autoplay }} autoplay {{ end }}
+        {{ if $muted }} muted {{ end }}
+        {{ if $loop }} loop {{ end }}
+        >
+        <source src="/media/{{ .Get `src` }}" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    {{ if $cap }}
+    <p class="caption">{{ $cap | .Page.RenderString }}</caption>
+    {{ end }}
+</div>

@@ -23,7 +23,7 @@
     {{ $max := add (int (index $termCount (sub (len $termCount) 1))) 1 }}
 
 
-    <div>
+    <div class="term-items">
         {{ range . }}
             {{ $weight := div (sub (math.Log .Count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
             {{ $fontSize := (add $fontSmall (mul $fontSpread $weight)) }}

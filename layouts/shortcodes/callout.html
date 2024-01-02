@@ -5,8 +5,11 @@
 <div class="callout callout-type-{{ .Get "type" }}">
     <div class="{{ if $foldable }}callout-button{{ end }}"><h4 class="callout-title">{{ .Get "title" |
         .Page.RenderString }}</h4></div>
-    <div {{ if (ne $type "" ) }} {{ end }}
-        class="callout-content {{ if $foldable }}hidden{{ end }}">
-        {{ .Inner | .Page.RenderString }}
+
+    <div class="callout-content-wrapper {{ if $foldable }}collapsed{{ end }}">
+        <div {{ if (ne $type "" ) }} {{ end }}
+            class="callout-content">
+            {{ .Inner | .Page.RenderString }}
+        </div>
     </div>
 </div>

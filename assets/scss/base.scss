@@ -234,7 +234,15 @@ details[open] > summary {
         padding: var(--padding-h) var(--padding-h);
         padding-top: 0;
         overflow: hidden;
+
+        .youtube {
+            margin: 0 -15px;
+            margin-bottom: -15px;
+            padding: 0 15px;
+            padding-top: calc(56.25% + 18px); // 16:9 Aspect Ratio
+        }
     }
+
 }
 
 .callout-content-wrapper.collapsed {

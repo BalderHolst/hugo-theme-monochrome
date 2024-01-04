@@ -227,23 +227,22 @@ details[open] > summary {
     display: grid; // For transition effect
     grid-template-rows: 1fr;
     transition: 100ms ease-out;
+
+    .callout-content {
+        color: var(--color-text);
+        transition: padding 100ms ease-out;
+        padding: var(--padding-h) var(--padding-h);
+        padding-top: 0;
+        overflow: hidden;
+    }
 }
 
 .callout-content-wrapper.collapsed {
     padding: 0px;
     grid-template-rows: 0fr;
-}
 
-.callout-content {
-    color: var(--color-text);
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    overflow: hidden;
-
-
-    p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
-        margin: 0 var(--padding-h);
+    .callout-content {
+        padding: 0 var(--padding-h);
     }
-
 }
+

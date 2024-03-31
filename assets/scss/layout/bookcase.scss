@@ -31,15 +31,15 @@
         border-radius: 0.375rem;
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
+        div.description {
+            border-left: 1px solid var(--color-text);
+        }
 
         figure {
             margin: 0;
             padding: var(--item-content-margin);
             height: var(--item-height);
             width: var(--item-height);
-
-            border-right: 1px solid var(--color-text);
-
 
             img {
                 pointer-events: none;

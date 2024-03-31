@@ -11,7 +11,7 @@
         <img src="{{ $cover_src_dark | relURL }}" class="bookcase-item-img-dark">
     </figure>
 
-    <div>
+    <div class="description">
         <h3>{{ .Title }}</h3>
         <p>
         {{ .Content | transform.Plainify | strings.Truncate 200 }}
